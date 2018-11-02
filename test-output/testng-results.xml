@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[        2018-11-01 16:20:48): [Test]-"OnlineCashierB2C" is started]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-01 16:20:48: [Method]-"OnlineCashierB2CTest.testOnlineCashierB2C" is started]]>
+    </line>
+    <line>
+      <![CDATA[[info]支付成功！用户 13467890004 在 872290049000101 下，消费 0.2 元]]>
+    </line>
+    <line>
+      <![CDATA[                2018-11-01 16:21:08: [Method]-"OnlineCashierB2CTest.testOnlineCashierB2C" is passed]]>
+    </line>
+    <line>
+      <![CDATA[        2018-11-01 16:21:10): [Test]-"OnlineCashierB2C" is finished]]>
+    </line>
+  </reporter-output>
+  <suite name="OnlineCashierB2C" duration-ms="21896" started-at="2018-11-01T08:20:48Z" finished-at="2018-11-01T08:21:10Z">
+    <groups>
+    </groups>
+    <test name="OnlineCashierB2C" duration-ms="21896" started-at="2018-11-01T08:20:48Z" finished-at="2018-11-01T08:21:10Z">
+      <class name="com.dy.AutoTest.web.actions.SingletonSet">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String)[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="init" is-config="true" duration-ms="4249" started-at="2018-11-01T08:20:44Z" finished-at="2018-11-01T08:20:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[online_simulator_uat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="releaseBrowser()[pri:0, instance:com.dy.AutoTest.web.actions.SingletonSet@23986957]" name="releaseBrowser" is-config="true" duration-ms="3189" started-at="2018-11-01T08:21:10Z" finished-at="2018-11-01T08:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseBrowser -->
+      </class> <!-- com.dy.AutoTest.web.actions.SingletonSet -->
+      <class name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest">
+        <test-method status="PASS" signature="BeforeTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest@23f7d05d]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2018-11-01T08:20:48Z" finished-at="2018-11-01T08:20:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a699efa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-01 16:20:48): [Test]-"OnlineCashierB2C" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest@23f7d05d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-01T08:20:48Z" finished-at="2018-11-01T08:20:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest@23f7d05d]" name="init" is-config="true" duration-ms="13" started-at="2018-11-01T08:20:48Z" finished-at="2018-11-01T08:20:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest@23f7d05d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-11-01T08:20:48Z" finished-at="2018-11-01T08:20:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest.testOnlineCashierB2C(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-01 16:20:48: [Method]-"OnlineCashierB2CTest.testOnlineCashierB2C" is started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testOnlineCashierB2C(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest@23f7d05d]" name="testOnlineCashierB2C" duration-ms="19848" started-at="2018-11-01T08:20:48Z" data-provider="B2C" finished-at="2018-11-01T08:21:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean@62727399]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[info]支付成功！用户 13467890004 在 872290049000101 下，消费 0.2 元]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testOnlineCashierB2C -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest@23f7d05d]" name="afterMethod" is-config="true" duration-ms="2001" started-at="2018-11-01T08:21:08Z" finished-at="2018-11-01T08:21:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOnlineCashierB2C status=SUCCESS method=OnlineCashierB2CTest.testOnlineCashierB2C(com.dy.AutoTest.OnlineCashier.POJO.OnlineCashierB2CBean)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest@23f7d05d] output=[info]支付成功！用户 13467890004 在 872290049000101 下，消费 0.2 元]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[                2018-11-01 16:21:08: [Method]-"OnlineCashierB2CTest.testOnlineCashierB2C" is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="AfterTest(org.testng.ITestContext)[pri:0, instance:com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest@23f7d05d]" name="AfterTest" is-config="true" duration-ms="1" started-at="2018-11-01T08:21:10Z" finished-at="2018-11-01T08:21:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a699efa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[        2018-11-01 16:21:10): [Test]-"OnlineCashierB2C" is finished]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest -->
+    </test> <!-- OnlineCashierB2C -->
+  </suite> <!-- OnlineCashierB2C -->
+</testng-results>

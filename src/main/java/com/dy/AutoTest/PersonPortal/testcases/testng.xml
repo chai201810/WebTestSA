@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite-dy">
+	<parameter name="data" value="/tool/properties/data.properties"></parameter>
+	<parameter name="locator" value="/tool/properties/locator.properties"></parameter>
+	<parameter name="browserCategory" value="chrome"></parameter>
+	
+	<test name="TestTransactionManagement">
+		<groups>
+		<!-- 	<define name="TestModule">
+				<include name="TestModule1.1"></include>
+			</define> -->
+
+<!-- 		 <run>
+				<include name="Class"></include>
+				<include name="TestModule1.4"></include>
+			</run> -->
+		</groups>
+		<classes>
+			<class name="com.dy.AutoTest.PersonPortal.testcases.TestTransactionManagement" />
+		</classes>
+	</test> 
+</suite> 
+
+

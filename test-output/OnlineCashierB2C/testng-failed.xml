@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [OnlineCashierB2C]">
+  <parameter name="environment" value="online_simulator_uat"/>
+  <parameter name="browserCategory" value="firefox"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="OnlineCashierB2C(failed)">
+    <classes>
+      <class name="com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="init"/>
+          <include name="afterMethod"/>
+          <include name="BeforeTest"/>
+          <include name="testOnlineCashierB2C" invocation-numbers="0"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- com.dy.AutoTest.OnlineCashier.TestCases.OnlineCashierB2CTest -->
+    </classes>
+  </test> <!-- OnlineCashierB2C(failed) -->
+</suite> <!-- Failed suite [OnlineCashierB2C] -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MerchantInfoInsert"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="163.008">
+  <properties />
+  
+  
+            <testcase name="testMerchantInfoInsert" time="163.008" classname="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantInfoInsertPageTest" />
+      
+</testsuite>

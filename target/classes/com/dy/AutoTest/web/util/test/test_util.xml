@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite_Util">
+  <test thread-count="5" name="Test_Util">
+    <classes>
+      <class name="com.dy.AutoTest.web.util.test.JdbcUtilTest"/>
+    </classes>
+  </test> <!-- Test_Util -->
+</suite> <!-- Suite_Util -->

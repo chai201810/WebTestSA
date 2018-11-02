@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteOperationPlatform" >
+ 	<parameter name="browserCategory" value="chrome"></parameter>
+	<parameter name="environment" value="pop_uat"></parameter>
+<!--      
+   	<test thread-count="5" name="MerchantFeeRateAdd">
+	<parameter name="OperID" value="T00105"></parameter>
+		<classes>
+			<class
+				name="com.dy.AutoTest.web.actions.SingletonSet">
+			</class>
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+				<methods>
+					<include name="testLogin" />
+				</methods>
+			</class> 
+			<class 
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantFeeRatePageTest">
+				<methods>
+					<include name="testMerchantFeeRateAdd"></include>
+				</methods>
+			</class> 
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+				<methods>
+					<include name="testQuit" />
+				</methods>
+			</class> 
+		</classes>
+	</test>
+	  -->
+<!-- 	  
+	<test thread-count="5" name="MerchantAuditPass">
+		<parameter name="OperID" value="T00107"></parameter>
+		<parameter name="AuditID" value="3"></parameter>
+		<classes>
+			<class
+				name="com.dy.AutoTest.web.actions.SingletonSet"></class>
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+				<methods>
+					<include name="testLogin" />
+				</methods>
+			</class>
+			<class
+				name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
+				<methods>
+					<include name="testMerchantAuditPass" />
+				</methods>
+			</class>
+			<class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest"> 
+				<methods><include name="testQuit" /></methods> </class>
+		</classes>
+	</test> 
+     -->
+  
+    <test thread-count="5" name="MerchantAuditRefuse">
+		<parameter name="OperID" value="T00107"></parameter>
+		<parameter name="AuditID" value="3"></parameter>
+	    <classes>
+	    	<class name="com.dy.AutoTest.web.actions.SingletonSet"></class>
+	      	<class name="com.dy.AutoTest.OperationPlatform.TestCases.LoginPageTest">
+				 <methods><include name="testLogin" /></methods>
+	   		</class>
+	   	  	<class name="com.dy.AutoTest.OperationPlatform.TestCases.MerchantManagementOnLine.OnLineMechantInfo.MerchantAuditPageTest">
+				<methods><include name="testMerchantAuditRefuse" /></methods>
+			</class>
+	   		<class name="com.dy.AutoTest.OperationPlatform.TestCases.MainMenuPageTest">
+				 <methods><include name="testQuit" /></methods>
+	   		</class> 
+	    </classes>
+  </test> 
+
+</suite> <!-- SuiteOperationPlatform -->
