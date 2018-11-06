@@ -79,26 +79,20 @@ public class KeyBoardSimulator {
 		map.put("F10", KeyEvent.VK_F10);
 		map.put("F11", KeyEvent.VK_F11);
 		map.put("F12", KeyEvent.VK_F12);
-
 	}
 
 	// 使用User32库里面键位值转换
 	public interface User32 extends StdCallLibrary {
 		User32 Instance = (User32) Native.loadLibrary("User32", User32.class);
-
 		int MapVirtualKeyA(int key, int type);
 	}
 
 	// 此处是winIo使用关键
 	public interface WinIo extends StdCallLibrary {
 		WinIo Instance = (WinIo) Native.loadLibrary("WinIo64", WinIo.class);
-
 		boolean InitializeWinIo();
-
 		boolean GetPortVal(int portAddr, int pPortVal, int size);
-
 		boolean SetPortVal(int portAddr, int portVal, int size);
-
 		void ShutdownWinIo();
 	}
 
@@ -117,7 +111,6 @@ public class KeyBoardSimulator {
 			if (!WinIo.Instance.GetPortVal(CONTROL_PORT, val, 1)) {
 				System.err.println("Cannot get the Port");
 			}
-
 		} while ((0x2 & val) > 0);
 	}
 
@@ -125,17 +118,17 @@ public class KeyBoardSimulator {
 		Thread.sleep(100);
 		KBCWait4IBE();
 		WinIo.Instance.SetPortVal(KeyBoardSimulator.CONTROL_PORT, 0xD2, 1);
-		
+
 		Thread.sleep(100);
 		KBCWait4IBE();
 		WinIo.Instance.SetPortVal(KeyBoardSimulator.DATA_PORT, key, 1);
 	}
 
 	public static void KeyUp(int key) throws Exception {
-		Thread.sleep(20);
+		Thread.sleep(100);
 		KBCWait4IBE();
 		WinIo.Instance.SetPortVal(KeyBoardSimulator.CONTROL_PORT, 0xD2, 1);
-		
+
 		Thread.sleep(100);
 		KBCWait4IBE();
 		WinIo.Instance.SetPortVal(KeyBoardSimulator.DATA_PORT, (key | 0x80), 1);
@@ -155,26 +148,25 @@ public class KeyBoardSimulator {
 //		inputMockKeyBoard("258025");
 		inputMockKeyBoard("1234qwer");
 	}
-	
+
 	public static void inputMockKeyBoard(String inputValue) throws Exception {
-		
-		System.out.println("winIO64初始化是否成功：" + WinIo.Instance.InitializeWinIo());// 此处应该有判断，只有初始化成功才可继续往下走，否者直接终止
+		System.out.println("winIO64初始化是否成功：" + WinIo.Instance.InitializeWinIo());
 		Thread.sleep(3000);
 		for (int i = 0; i < inputValue.length(); i++) {
 			mockKeyBoard("" + inputValue.charAt(i));
 		}
 		WinIo.Instance.ShutdownWinIo();
 	}
-	
+
 	private static Object lock = new Object();
-	
+
 	public static void mockKeyBoard(String key) throws Exception {
 		synchronized (lock) {
 			KeyDown(toScanCode(key));
 			Thread.sleep(100);
 			KeyUp(toScanCode(key));
 		}
-		System.out.println("Mock Key: " + key);	
+		System.out.println("Mock Key: " + key);
 	}
-	
+
 }
